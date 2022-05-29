@@ -1,38 +1,41 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    getStartedContainer: {
-      alignItems: 'center',
-      marginHorizontal: 50,
+    container_card: {
+      //backgroundColor: '#FFFFFF',
+      borderRadius: 10,
+      width: 145,
+      height: 145,
+      shadowColor: 'black',
+      margin: 25,
     },
-    homeScreenFilename: {
-      marginVertical: 7,
-    },
-    codeHighlightContainer: {
-      borderRadius: 3,
-      paddingHorizontal: 4,
-    },
-    getStartedText: {
-      fontSize: 17,
-      lineHeight: 24,
+    Title: {
+      fontFamily: 'Montserrat',
+      color: '#171725',
       textAlign: 'center',
+      fontWeight: "700",
+      paddingTop: 14,
     },
-    helpContainer: {
-      marginTop: 15,
-      marginHorizontal: 20,
-      alignItems: 'center',
+    BoxShadow: {
+        shadowColor: '#171717',
+        shadowOffset: {width: 4, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
     },
-    helpLink: {
-      paddingVertical: 15,
-    },
-    helpLinkText: {
+    Subtitle: {
+      fontFamily: 'Montserrat',
+      color: '#999999',
+      paddingBottom: 14,
+      paddingTop: 14,
       textAlign: 'center',
+      textTransform: 'uppercase',
+      fontWeight: "400",
     },
-    text_value: {
-        //fontFamily: 'Montserrat',
-        color: '#6979F8',
-        textAlign: 'center',
-        fontSize: 48
+    Value: {
+      fontFamily: 'Montserrat',
+      color: '#6979F8',
+      textAlign: 'center',
+      fontSize: 48,
+      fontWeight: "500",
     }
-
-  });
+});

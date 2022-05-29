@@ -5,19 +5,16 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import Colors from '../../constants/Colors';
 import { MonoText } from './../StyledText';
 import { Text, View } from './../Themed';
-import { Card } from "@rneui/themed";
 import { styles } from './styles';
 
 export default function CounterCard({ title, subtitlePeriod, value }: { title: string, subtitlePeriod: string, value: number,  }) {
   return (
-    <View>
-        <Card>
-            <Card.Title>{title}</Card.Title>
+    <View style={[styles.container_card, styles.BoxShadow]}>
+            <Text style={styles.Title}>{title}</Text>
             <View>
-                <Text style={styles.text_value}>{value}</Text>
+                <Text style={styles.Value}>{value}</Text>
             </View>
-            <Text>{subtitlePeriod}</Text>
-        </Card>
+            <Text style={styles.Subtitle}>{subtitlePeriod}</Text>
     </View>
   );
 }
