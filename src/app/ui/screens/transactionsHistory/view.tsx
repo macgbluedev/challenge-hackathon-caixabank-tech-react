@@ -12,6 +12,8 @@ export default function TransactionsHistoryScreen({
 }: RootTabScreenProps<"TabOne">) {
   return (
     <View style={styles.container}>
+      <Text>Transactions history</Text>
+      <Text>These are your monthly and daily actions 📊</Text>
       <View style={styles.card_container}>
         <CounterCard
           title="Transactions"
