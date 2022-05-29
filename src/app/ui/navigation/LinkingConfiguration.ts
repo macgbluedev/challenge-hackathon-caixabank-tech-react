@@ -25,6 +25,11 @@ const linking: LinkingOptions<RootStackParamList> = {
               TabTwoScreen: 'two',
             },
           },
+          TransactionsHistory: {
+            screens: {
+              TransactionsHistoryScreen: 'three',
+            },
+          }
         },
       },
       Modal: 'modal',
